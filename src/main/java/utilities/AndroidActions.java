@@ -9,7 +9,7 @@ import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
-public class AndroidActions extends AppiumActions {
+public class AndroidActions extends JavaActions {
 
 	
 	public void longPressAndroidApp(AndroidDriver driver, WebElement element) {
@@ -19,9 +19,7 @@ public class AndroidActions extends AppiumActions {
 	}
 	
 	public void scrollToElementAndroidApp(AndroidDriver driver, String elementText) {
-		String automatorScript = "new UiScrollable(new Uiselector()).scrollIntoView(text(\"%s\"));";
-		automatorScript = String.format(automatorScript, elementText);
-		driver.findElement(AppiumBy.androidUIAutomator(automatorScript));
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\""+elementText+"\"));"));
 	}
 	
 	public boolean scrollDownAndroidApp(AndroidDriver driver) {

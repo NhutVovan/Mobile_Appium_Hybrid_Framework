@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T23:37:52 ICT" name="Default suite" finished-at="2022-09-17T23:38:19 ICT" duration-ms="27563">
+  <suite started-at="2022-09-18T14:18:04 ICT" name="Default suite" finished-at="2022-09-18T14:18:45 ICT" duration-ms="40941">
     <groups>
     </groups>
-    <test started-at="2022-09-17T23:37:52 ICT" name="Default test" finished-at="2022-09-17T23:38:19 ICT" duration-ms="27563">
-      <class name="ecommerce.android.FormPageTest">
-        <test-method signature="appiumTest()[pri:0, instance:ecommerce.android.FormPageTest@793f29ff]" started-at="2022-09-17T23:37:52 ICT" name="appiumTest" finished-at="2022-09-17T23:38:19 ICT" duration-ms="27409" status="PASS">
+    <test started-at="2022-09-18T14:18:04 ICT" name="Default test" finished-at="2022-09-18T14:18:45 ICT" duration-ms="40941">
+      <class name="ecommerce.android.ECommerceShopApp">
+        <test-method signature="appiumTest()[pri:0, instance:ecommerce.android.ECommerceShopApp@793f29ff]" started-at="2022-09-18T14:18:04 ICT" name="appiumTest" finished-at="2022-09-18T14:18:45 ICT" duration-ms="40788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appiumTest -->
-      </class> <!-- ecommerce.android.FormPageTest -->
+      </class> <!-- ecommerce.android.ECommerceShopApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

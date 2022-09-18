@@ -4,7 +4,7 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 
 
-public class AppiumActions {
+public class JavaActions {
 
 	public Double convertPriceFromStringToDouble(String priceString) {
 		 return Double.parseDouble(priceString.substring(1));

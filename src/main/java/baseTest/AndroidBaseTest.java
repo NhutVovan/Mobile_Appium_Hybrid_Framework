@@ -28,7 +28,7 @@ public class AndroidBaseTest extends AppiumBaseTest {
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName(androidDeviceName);
-		options.setApp(androidAppPath);
+		options.setApp(GlobalConstants.PROJECT_PATH+androidAppPath);
 		//options.setChromedriverExecutable(GlobalConstants.BROWSER_DRIVER_PATH);
 		//options.setCapability("browserName", "Chrome");
 		

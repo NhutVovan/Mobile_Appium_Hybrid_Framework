@@ -11,5 +11,5 @@ public class GlobalConstants {
 	public static final String APP_PATH = System.getProperty("user.dir") + "\\src\\main\\java\\resources\\ApiDemos-debug.apk";
 	
 	//IOS
-	public static final String IOS_APP_PATH = "Usr\\local\\UIKitcatalog.app";
+	
 }
