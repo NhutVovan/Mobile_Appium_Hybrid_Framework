@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ecommerce.android.FormPageTest">
+      <class name="ecommerce.android.ECommerceShopApp">
         <methods>
           <include name="appiumTest"/>
         </methods>
-      </class> <!-- ecommerce.android.FormPageTest -->
+      </class> <!-- ecommerce.android.ECommerceShopApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

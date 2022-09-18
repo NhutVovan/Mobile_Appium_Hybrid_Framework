@@ -1,14 +1,17 @@
 package ecommerce.android;
 
 import java.io.IOException;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import baseTest.AndroidBaseTest;
+import ecommerce.pageObjects.android.CartPageObject;
 import ecommerce.pageObjects.android.FormPageObject;
 import ecommerce.pageObjects.android.ProductCataloguePageObject;
 import io.appium.java_client.android.AndroidDriver;
 
 
-public class ECommerceShopApp extends AndroidBaseTest {
+public class ECommerceShoppingApp extends AndroidBaseTest {
 	
 	
 	@Test
@@ -17,14 +20,22 @@ public class ECommerceShopApp extends AndroidBaseTest {
 		ConfigureServerAndroid();
 		
 		FormPageObject formPage = new FormPageObject((AndroidDriver)driver);
-		formPage.setNameField("Joe Terry");
+		formPage.setNameField("Jodie Foster");
 		formPage.setGender("female");
 		formPage.setCountrySelection("Argentina");
 		ProductCataloguePageObject productCataloguePage= formPage.submitForm();
 		
 		productCataloguePage.addItemToCartByIndex(0);
 		productCataloguePage.addItemToCartByIndex(0);
-		productCataloguePage.goToCartPage();
+		CartPageObject cartPage = productCataloguePage.goToCartPage();
+		Double totalSum = cartPage.getProductSum();
+		Double totalDisplayed = cartPage.getTotalAmountDisplayed();
+		//Check amount correct
+		Assert.assertEquals(totalSum, totalDisplayed);
+		
+		cartPage.getAcceptTermsConditions();
+		cartPage.getCheckBox();
+		cartPage.submitOrder();
 		
 		//TearDownServer
 		TearDownServerAndroid();
