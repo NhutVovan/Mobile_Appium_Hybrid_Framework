@@ -15,7 +15,7 @@ public class ECommerceShoppingApp extends AndroidBaseTest {
 	
 	
 	@Test
-	public void appiumTest() throws IOException, InterruptedException {
+	public void Order_Product_Test() throws IOException, InterruptedException {
 		//ConfigureServer
 		ConfigureServerAndroid();
 		

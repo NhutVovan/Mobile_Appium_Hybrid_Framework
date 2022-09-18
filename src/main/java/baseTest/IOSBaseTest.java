@@ -13,7 +13,7 @@ import utilities.GlobalConstants;
 public class IOSBaseTest extends AppiumBaseTest {
 	
 	
-	public IOSDriver ConfigureServerIOS(IOSDriver driver) throws IOException {
+	public void ConfigureServerIOS() throws IOException {
 		Properties prop = new Properties();
 		FileInputStream fileStr = new FileInputStream(GlobalConstants.PROPERTIES_FILE_PATH);
 		prop.load(fileStr);
@@ -37,11 +37,9 @@ public class IOSBaseTest extends AppiumBaseTest {
 		driver = new IOSDriver(new URL("http://"+ipAddress+":"+port), options);
 			
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-			
-		return driver;
 	}
 	
-	public void TearDownServerIOS(IOSDriver driver) {
+	public void TearDownServerIOS() {
 		//Quit driver
 		driver.quit();
 		//Stop Appium server

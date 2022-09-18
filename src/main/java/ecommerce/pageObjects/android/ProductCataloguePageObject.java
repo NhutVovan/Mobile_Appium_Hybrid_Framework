@@ -11,7 +11,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import utilities.AndroidActions;
 
 public class ProductCataloguePageObject extends AndroidActions {
-
 	AndroidDriver driver;
 	
 	public ProductCataloguePageObject(AndroidDriver driver){

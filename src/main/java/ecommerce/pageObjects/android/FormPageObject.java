@@ -11,7 +11,6 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import utilities.AndroidActions;
 
 public class FormPageObject extends AndroidActions {
-
 	AndroidDriver driver;
 	
 	public FormPageObject(AndroidDriver driver){
