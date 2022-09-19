@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\vovan\AppData\Local\Temp\testng-eclipse--73678534\testng-customsuite.xml</span>
+                    <span>C:\Users\vovan\AppData\Local\Temp\testng-eclipse--915439635\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="mobileTesting.AppiumBasics" class="method navigator-link" hash-for-method="appiumTest">appiumTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="ecommerce.android.ECommerceShoppingApp_DataFromJsonFile" class="method navigator-link" hash-for-method="Order_Product_Test({name=Jodie, country=Canada, gender=female})">Order_Product_Test({name=Jodie, country=Canada, gender=female})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ecommerce.android.ECommerceShoppingApp_DataFromJsonFile" class="method navigator-link" hash-for-method="Order_Product_Test({name=John, country=Italy, gender=male})">Order_Product_Test({name=John, country=Italy, gender=male})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="ecommerce.android.ECommerceShoppingApp_DataFromJsonFile" class="method navigator-link" hash-for-method="Order_Product_Test({name=Messi, country=Brazil, gender=male})">Order_Product_Test({name=Messi, country=Brazil, gender=male})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,31 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">mobileTesting.AppiumBasics</span>
+              <span class="class-name">ecommerce.android.ECommerceShoppingApp_DataFromJsonFile</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="appiumTest">
-                  </a> <!-- appiumTest -->
-                  <span class="method-name">appiumTest</span>
+                  <a name="Order_Product_Test({name=Jodie, country=Canada, gender=female})">
+                  </a> <!-- Order_Product_Test({name=Jodie, country=Canada, gender=female}) -->
+                  <span class="method-name">Order_Product_Test</span>
+                  <span class="parameters">({name=Jodie, country=Canada, gender=female})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Order_Product_Test({name=John, country=Italy, gender=male})">
+                  </a> <!-- Order_Product_Test({name=John, country=Italy, gender=male}) -->
+                  <span class="method-name">Order_Product_Test</span>
+                  <span class="parameters">({name=John, country=Italy, gender=male})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Order_Product_Test({name=Messi, country=Brazil, gender=male})">
+                  </a> <!-- Order_Product_Test({name=Messi, country=Brazil, gender=male}) -->
+                  <span class="method-name">Order_Product_Test</span>
+                  <span class="parameters">({name=Messi, country=Brazil, gender=male})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +162,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vovan\AppData\Local\Temp\testng-eclipse--73678534\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vovan\AppData\Local\Temp\testng-eclipse--915439635\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +171,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;mobileTesting.AppiumBasics&quot;/&gt;
+      &lt;class name=&quot;ecommerce.android.ECommerceShoppingApp_DataFromJsonFile&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,11 +211,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'appiumTest')
-data.setCell(0, 2, 'mobileTesting.AppiumBasics')
-data.setCell(0, 3, 69406);
+data.setCell(0, 1, 'Order_Product_Test')
+data.setCell(0, 2, 'ecommerce.android.ECommerceShoppingApp_DataFromJsonFile')
+data.setCell(0, 3, 52359);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Order_Product_Test')
+data.setCell(1, 2, 'ecommerce.android.ECommerceShoppingApp_DataFromJsonFile')
+data.setCell(1, 3, 31069);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Order_Product_Test')
+data.setCell(2, 2, 'ecommerce.android.ECommerceShoppingApp_DataFromJsonFile')
+data.setCell(2, 3, 26706);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -219,11 +254,39 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">mobileTesting.AppiumBasics</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">appiumTest</span>
+              <div class="chronological-class-name">ecommerce.android.ECommerceShoppingApp_DataFromJsonFile</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">16225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Order_Product_Test({name=Jodie, country=Canada, gender=female})</span>
+                <span class="method-start">19691 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">50764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Order_Product_Test({name=John, country=Italy, gender=male})</span>
+                <span class="method-start">52490 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">104852 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Order_Product_Test({name=Messi, country=Brazil, gender=male})</span>
+                <span class="method-start">106757 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">133466 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

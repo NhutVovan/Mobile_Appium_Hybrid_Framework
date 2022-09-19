@@ -6,6 +6,8 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
+import ecommerce.pageObjects.android.FormPageObject;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
@@ -42,6 +44,12 @@ public class AndroidBaseTest extends AppiumBaseTest {
 		driver.quit();
 		//Stop Appium server
 		service.stop();
+	}
+	
+	public void preSetup() {
+		//adb shell dumpsys window | find "mCurrentFocus"
+		Activity activity = new Activity("com.androidsample.generalstore","com.androidsample.generalstore.MainActivity");
+		((AndroidDriver)driver).startActivity(activity);
 	}
 
 }
